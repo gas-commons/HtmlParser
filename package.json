@@ -7,7 +7,9 @@
     "create": "clasp create --type standalone --title HtmlParser --rootDir src",
     "push": "clasp push",
     "watch": "clasp push --watch",
-    "open": "clasp open"
+    "open": "clasp open",
+    "lint": "eslint --ext .ts --ignore-path .gitignore src",
+    "fix": "eslint --fix --ext .ts --ignore-path .gitignore src"
   },
   "devDependencies": {
     "@google/clasp": "^2.2.1",
