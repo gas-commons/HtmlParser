@@ -1,3 +1,6 @@
 {
-  "name": "HtmlParser"
+  "name": "HtmlParser",
+  "devDependencies": {
+    "@google/clasp": "^2.2.1"
+  }
 }
