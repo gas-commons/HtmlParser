@@ -15,6 +15,7 @@
     "@google/clasp": "^2.2.1",
     "@types/google-apps-script": "0.0.56",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "eslint": "^6.2.1",
     "eslint-config-standard": "^14.0.1",
     "eslint-plugin-googleappsscript": "^1.0.3",
