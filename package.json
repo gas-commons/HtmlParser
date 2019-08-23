@@ -1,5 +1,14 @@
 {
   "name": "HtmlParser",
+  "scripts": {
+    "start": "npm run watch",
+    "login": "clasp login",
+    "logout": "clasp logout",
+    "create": "clasp create --type standalone --title HtmlParser --rootDir src",
+    "push": "clasp push",
+    "watch": "clasp push --watch",
+    "open": "clasp open"
+  },
   "devDependencies": {
     "@google/clasp": "^2.2.1",
     "@types/google-apps-script": "0.0.56"
