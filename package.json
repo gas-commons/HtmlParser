@@ -8,8 +8,8 @@
     "push": "clasp push",
     "watch": "clasp push --watch",
     "open": "clasp open",
-    "lint": "eslint --ext .ts --ignore-path .gitignore src",
-    "fix": "eslint --fix --ext .ts --ignore-path .gitignore src"
+    "lint": "eslint --ext .ts --ignore-path .gitignore 'src/**/*.ts' ",
+    "fix": "eslint --fix --ext .ts --ignore-path .gitignore 'src/**/*.ts' "
   },
   "devDependencies": {
     "@google/clasp": "^2.3.0",
