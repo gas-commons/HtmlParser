@@ -5,6 +5,9 @@
     "googleappsscript"
   ],
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
   "env": {
     "googleappsscript/googleappsscript": true
   }
