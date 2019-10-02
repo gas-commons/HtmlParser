@@ -1,14 +1,14 @@
 // NOTE: Below class will be private in Google Apps Script.
 class HtmlParser_ {
-  // eslint-disable-next-line camelcase
+  // eslint-disable-next-line @typescript-eslint/camelcase
   private readonly element: GoogleAppsScript.XML_Service.Element
 
-  // eslint-disable-next-line camelcase
+  // eslint-disable-next-line @typescript-eslint/camelcase
   constructor (element: GoogleAppsScript.XML_Service.Element) {
     this.element = element
   }
 
-  // eslint-disable-next-line camelcase
+  // eslint-disable-next-line @typescript-eslint/camelcase
   getElementById (id: string): GoogleAppsScript.XML_Service.Element {
     const descendantElements = this.getDescendantElements()
     return descendantElements.filter(element => {
@@ -21,7 +21,7 @@ class HtmlParser_ {
     })[0]
   }
 
-  // eslint-disable-next-line camelcase
+  // eslint-disable-next-line @typescript-eslint/camelcase
   getElementsByClassName (className: string): GoogleAppsScript.XML_Service.Element[] {
     const descendantElements = this.getDescendantElements()
     descendantElements.push(this.element)
@@ -35,13 +35,13 @@ class HtmlParser_ {
     })
   }
 
-  // eslint-disable-next-line camelcase
+  // eslint-disable-next-line @typescript-eslint/camelcase
   getElementsByTagName (tagName: string): GoogleAppsScript.XML_Service.Element[] {
     const descendantElements = this.getDescendantElements()
     return descendantElements.filter(element => element.getName() === tagName)
   }
 
-  // eslint-disable-next-line camelcase
+  // eslint-disable-next-line @typescript-eslint/camelcase
   private getDescendantElements (): GoogleAppsScript.XML_Service.Element[] {
     return this.element.getDescendants()
       .map(content => content.asElement())
